@@ -24,6 +24,8 @@ public class MyWorld extends World
         prepare();
         actCounter = new Counter("Tempo: ");
         addObject(actCounter, 1000, 28);
+        Ground plataforma = new Ground();
+        addObject(plataforma, 400, 500); // X, Y
         
     }
     
