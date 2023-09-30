@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start_Menu extends World
 {
-    private final int DELTA=150;
+    private final int DELTA=110;
     /**
      * Constructor for objects of class Start_Menu.
      * 

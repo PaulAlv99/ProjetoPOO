@@ -15,8 +15,13 @@ public class barbie extends Actor
     public void act()
     {
         movimento("D","A","S","W");
+        checkFalling();
     }
     int velocidade=2;
+    private int vSpeed = 0;
+    private int jumpHeight=-8;
+    private int jumpDelay = 10;
+    private boolean isJumping = false;
     //Greenfoot.getRandomNumber(10);
     
     public void movimento(String key1,String key2,String key3,String key4){
@@ -32,5 +37,27 @@ public class barbie extends Actor
         if(Greenfoot.isKeyDown(key4)){
             setLocation(getX(), getY()-velocidade);//W
         }
+        if (Greenfoot.isKeyDown("space"))
+        {
+          vSpeed=jumpHeight;
+          fall();
+        }
+    }
+    private void fall()
+    {
+    setLocation(getX(),getY() + vSpeed);
+    vSpeed = vSpeed + velocidade;
+    }
+    boolean onGround()
+   {
+    Actor under = getOneObjectAtOffset(0,getImage ().getHeight()/2,Ground.class);
+    return under!=null;
+   }
+   public void checkFalling()
+   {
+       if(onGround() == false)
+       {
+           fall();
+       }
     }
 }

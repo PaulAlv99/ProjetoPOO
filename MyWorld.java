@@ -41,6 +41,10 @@ public class MyWorld extends World
 
         Pause pause = new Pause();
         addObject(pause,1077,28);
+        Ground ground = new Ground();
+        addObject(ground,929,374);
+        Ground ground2 = new Ground();
+        addObject(ground2,147,227);
     }
     
     public void act()

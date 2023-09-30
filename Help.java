@@ -14,7 +14,7 @@ public class Help extends Button
      */
     public Help(int Width,int Height){
         super();
-        resize_butt(Width/4,Height/4);
+        resize_butt(300,300);
         
     }
     public void act()
