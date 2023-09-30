@@ -1,0 +1,65 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class MainCharacters here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class MainCharacters extends Actor
+{
+    /**
+     * Act - do whatever the MainCharacters wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        // Add your action code here.
+    }
+    
+    public void movimento(String key1,String key2,String key3,String key4){
+        if(Greenfoot.isKeyDown(key1)){
+            move(velocidade);//D
+        }
+        if(Greenfoot.isKeyDown(key2)){
+            move(-velocidade);//A
+        }
+        if(Greenfoot.isKeyDown(key3)){
+            setLocation(getX(), getY()+velocidade);//S
+        }
+        if(Greenfoot.isKeyDown(key4)){
+            setLocation(getX(), getY()-velocidade);//W
+        }
+        if (Greenfoot.isKeyDown("space"))
+        {
+          vSpeed=jumpHeight;
+          fall();
+        }
+    }
+    int velocidade=2;
+    private int vSpeed = 0;
+    private int jumpHeight=-8;
+    private int jumpDelay = 10;
+    private boolean isJumping = false;
+    //Greenfoot.getRandomNumber(10);
+    
+    
+    private void fall()
+    {
+    setLocation(getX(),getY() + vSpeed);
+    vSpeed = vSpeed + velocidade;
+    }
+    boolean onGround()
+   {
+    Actor under = getOneObjectAtOffset(0,getImage ().getHeight()/2,Ground.class);
+    return under!=null;
+   }
+   public void checkFalling()
+   {
+       if(onGround() == false)
+       {
+           fall();
+       }
+    }
+}
+

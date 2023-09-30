@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MainCharacters
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MainCharacters\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ MainCharacters\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=key1\ key2\ key3\ key4
+comment2.target=void\ movimento(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=void\ fall()
+comment4.params=
+comment4.target=boolean\ onGround()
+comment5.params=
+comment5.target=void\ checkFalling()
+numComments=6
