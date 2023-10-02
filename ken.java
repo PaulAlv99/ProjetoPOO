@@ -16,5 +16,7 @@ public class ken extends barbie
     {
         movimento("right","left","up");
         checkFalling();
+        checkCollisionWithGround();
+        checkCollisionWhithBloco();
     }
 }
