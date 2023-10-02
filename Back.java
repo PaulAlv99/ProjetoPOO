@@ -14,7 +14,7 @@ public class Back extends Button
      */
     public Back(int Width,int Height){
         super();
-        resize_butt(Width/10,Height/10);
+        resize_butt(100,100);
         
     }
     public void act()
