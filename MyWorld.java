@@ -21,23 +21,10 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1); 
-        getBackground().setColor(new Color(135,206,235));
-        getBackground().fill();
         prepare();
         actCounter = new Counter("Tempo: ");
         addObject(actCounter, 1000, 28);
-        addObject(new Ground(), 0, 666); // X, Y
-        addObject(new Ground(), 100, 666);
-        addObject(new Ground(), 200, 666);
-        addObject(new Ground(), 300, 666);
-        addObject(new Ground(), 400, 666);
-        addObject(new Ground(), 500, 666);
-        addObject(new Ground(), 600, 666);
-        addObject(new Ground(), 700, 666);
-        addObject(new Ground(), 800, 666);
-        addObject(new Ground(), 900, 666);
-        addObject(new Ground(), 1000, 666);
-        addObject(new Ground(), 1100, 666);
+        
     }
     
     /**
