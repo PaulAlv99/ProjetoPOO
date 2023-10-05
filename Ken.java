@@ -14,8 +14,10 @@ public class Ken extends MainCharacters
      */
     public void act()
     {
-        // movement("right","left","up",,4);
-        // checkFalling();
-        // checkCollisionWithGround(Ground.class);
+        movement("right","left","up");
+        checkFalling();
+        checkCollisionWithGround(Ground.class);
+        checkCollisionWithGround(Bloco.class);
+        fire_bomb_ken();
     }
 }
