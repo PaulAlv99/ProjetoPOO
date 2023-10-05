@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=MainCharacters
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MainCharacters\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=MainCharacters()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ MainCharacters\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=img
+comment3.target=void\ animation_left(greenfoot.GreenfootImage[])
+comment4.params=img
+comment4.target=void\ animation_right(greenfoot.GreenfootImage[])
+comment5.params=key1\ key2\ key3\ img_right\ img_left
+comment5.target=void\ movement(java.lang.String,\ java.lang.String,\ java.lang.String,\ greenfoot.GreenfootImage[],\ greenfoot.GreenfootImage[])
+comment6.params=
+comment6.target=void\ fall()
+comment7.params=c
+comment7.target=boolean\ onGround(java.lang.Class)
+comment8.params=
+comment8.target=void\ checkFalling()
+comment9.params=c
+comment9.target=void\ checkCollisionWithGround(java.lang.Class)
+numComments=10

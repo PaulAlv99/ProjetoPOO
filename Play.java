@@ -15,7 +15,7 @@ public class Play extends Button
 
     public Play(int Width,int Height){
         super();
-        resize_butt(Width/4,Height/4);
+        resize_butt(150,150);
         
     }
     public void act()
