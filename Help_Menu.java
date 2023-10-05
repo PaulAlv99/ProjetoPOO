@@ -21,7 +21,7 @@ public class Help_Menu extends World
         
         addObject(pause_button,
         DELTA,
-        DELTA
+        DELTA-20
         );
     }
     public Help_Menu()

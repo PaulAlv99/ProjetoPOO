@@ -14,6 +14,9 @@ public class ken extends barbie
      */
     public void act()
     {
-        movimento("right","left","down","up");
+        movimento("right","left","up");
+        checkFalling();
+        checkCollisionWithGround();
+        checkCollisionWhithBloco();
     }
 }

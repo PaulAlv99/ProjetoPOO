@@ -8,21 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start_Menu extends World
 {
-    private final int DELTA=110;//valor que nao muda em vez de mudar em todo o lado
+    private final int DELTA=150;
     /**
      * Constructor for objects of class Start_Menu.
      * 
      */
     
      private void placeObjects(){
-        int worldWidth = getWidth();//vai buscar o comprimento do mundo(X)
-        int worldHeight = getHeight();//vai buscar a altura do mundo(Y)
-        
-        //constroi os botoes
+        int worldWidth = getWidth();
+        int worldHeight = getHeight();
         Play play_button = new Play(worldWidth,worldHeight);
         Help help_button = new Help(worldWidth,worldHeight);
         
-        //adiciona os botoes sabendo o nome do objeto e a localizacao em x e y
         addObject(play_button,
         worldWidth/2-DELTA,
         worldHeight/2

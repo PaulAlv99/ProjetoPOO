@@ -15,49 +15,29 @@ public class MyWorld extends World
      * 
      */
     private Counter actCounter;
-    private int timeElapsed; // saber os segundos decorridos
+    private int timeElapsed; // contar conjuntos de ciclos 55 e depois 55 o que equivale a 1s a 1s
     private int timeCounter; // contar ate 55(cada ciclo)
-    final int DELTA=20;
-    
-    private void placeObjects(){
-        int worldWidth = getWidth();
-        int worldHeight = getHeight();
-        int DELTA_PLAT=10;
-        
-        getBackground().setColor(new Color(135,206,235));
-        getBackground().fill();
-        
-        actCounter = new Counter("Tempo: ");
-        addObject(actCounter, worldWidth/2, worldHeight/20);
-        Barbie barbie = new Barbie();
-        addObject(barbie,worldWidth-100,(worldWidth/2)-DELTA-10);
-        Ken Ken = new Ken();
-        addObject(Ken,worldWidth-300,(worldWidth/2)-DELTA-10);
-        Pause pause = new Pause();
-        addObject(pause,1077,28);
-        
-        /*colocar plataformas no fundo do mapa,contudo não está muito bom
-         * é melhor saber o tamanho das plataformas para fazer os calculos
-         * corretos e nao ter plataformas sobrepostas
-         */
-        for(int i=0;i<140;i++){
-        addObject(new Ground(),
-        worldWidth-DELTA_PLAT,
-        worldHeight
-        );
-        DELTA_PLAT+=10;
-        }
-        
-    }
-        
-    
     public MyWorld()
     {    
-        // Create a new world with 110x600 cells with a cell size of 1x1 pixels.
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1100, 600, 1); 
+        getBackground().setColor(new Color(135,206,235));
+        getBackground().fill();
         prepare();
-        placeObjects();
-        
+        actCounter = new Counter("Tempo: ");
+        addObject(actCounter, 1000, 28);
+        addObject(new Ground(), 0, 666); // X, Y
+        addObject(new Ground(), 100, 666);
+        addObject(new Ground(), 200, 666);
+        addObject(new Ground(), 300, 666);
+        addObject(new Ground(), 400, 666);
+        addObject(new Ground(), 500, 666);
+        addObject(new Ground(), 600, 666);
+        addObject(new Ground(), 700, 666);
+        addObject(new Ground(), 800, 666);
+        addObject(new Ground(), 900, 666);
+        addObject(new Ground(), 1000, 666);
+        addObject(new Ground(), 1100, 666);
     }
     
     /**
@@ -67,14 +47,17 @@ public class MyWorld extends World
     private void prepare()
     {
 
+        barbie barbie = new barbie();
+        addObject(barbie,146,113);
+        ken ken = new ken();
+        addObject(ken,929,468);
+
+        Pause pause = new Pause();
+        addObject(pause,1077,28);
     }
     
     public void act()
     {
-        countframes();
-    }
-    /* count frames and increment to the seconds*/
-    private void countframes(){
         timeCounter = (timeCounter+1)%55;
             if (timeCounter == 0)
             {
@@ -83,6 +66,7 @@ public class MyWorld extends World
             }
             actCounter.setValue(timeElapsed + 1);
     }
+
     
     
 }
