@@ -24,5 +24,5 @@ Barbie and Ken are on an adventure to complete a thrilling parkour course. Each 
 
         Donwload ZIP of this project and then run project.greenfoot
 
-#### Realido por:
+#### Made by | Envolvidos no projeto:
     Paulo Alves, Renato Pêssego, João T. Abreu
