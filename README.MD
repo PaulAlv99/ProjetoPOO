@@ -23,3 +23,6 @@ Barbie and Ken are on an adventure to complete a thrilling parkour course. Each 
         Install Greenfoot (available at greenfoot.org).
 
         Donwload ZIP of this project and then run project.greenfoot
+
+#### Realido por:
+    Paulo Alves,Renato Pêssego,João T. Abreu
